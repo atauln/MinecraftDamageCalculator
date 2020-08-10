@@ -47,18 +47,24 @@ Partial Class HomePage
         Me.lblSharpAAxe = New System.Windows.Forms.Label()
         Me.lbSharpAAxe = New System.Windows.Forms.ListBox()
         Me.lblAxeDmgA = New System.Windows.Forms.Label()
-        Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.pnlExtrasA = New System.Windows.Forms.Panel()
         Me.cbStrengthIIA = New System.Windows.Forms.CheckBox()
         Me.cbStrengthIA = New System.Windows.Forms.CheckBox()
+        Me.pnlHelmA = New System.Windows.Forms.Panel()
+        Me.lblProtAHelm = New System.Windows.Forms.Label()
+        Me.lbProtAHelm = New System.Windows.Forms.ListBox()
+        Me.pnlChestA = New System.Windows.Forms.Panel()
         Me.pnlSwordA.SuspendLayout()
         Me.pnlAxeA.SuspendLayout()
-        Me.Panel1.SuspendLayout()
+        Me.pnlExtrasA.SuspendLayout()
+        Me.pnlHelmA.SuspendLayout()
+        Me.pnlChestA.SuspendLayout()
         Me.SuspendLayout()
         '
         'LblHelmA
         '
         Me.LblHelmA.AutoSize = True
-        Me.LblHelmA.Location = New System.Drawing.Point(486, 339)
+        Me.LblHelmA.Location = New System.Drawing.Point(9, 10)
         Me.LblHelmA.Name = "LblHelmA"
         Me.LblHelmA.Size = New System.Drawing.Size(43, 13)
         Me.LblHelmA.TabIndex = 0
@@ -68,7 +74,7 @@ Partial Class HomePage
         '
         Me.lbHelmA.FormattingEnabled = True
         Me.lbHelmA.Items.AddRange(New Object() {"(None)", "Leather", "Chainmail", "Turtle", "Iron", "Gold", "Diamond", "Netherite"})
-        Me.lbHelmA.Location = New System.Drawing.Point(489, 355)
+        Me.lbHelmA.Location = New System.Drawing.Point(9, 26)
         Me.lbHelmA.Name = "lbHelmA"
         Me.lbHelmA.Size = New System.Drawing.Size(163, 43)
         Me.lbHelmA.TabIndex = 1
@@ -77,7 +83,7 @@ Partial Class HomePage
         '
         Me.lbChestA.FormattingEnabled = True
         Me.lbChestA.Items.AddRange(New Object() {"(None/Elytra)", "Leather", "Chainmail", "Iron", "Gold", "Diamond", "Netherite"})
-        Me.lbChestA.Location = New System.Drawing.Point(54, 444)
+        Me.lbChestA.Location = New System.Drawing.Point(9, 26)
         Me.lbChestA.Name = "lbChestA"
         Me.lbChestA.Size = New System.Drawing.Size(163, 43)
         Me.lbChestA.TabIndex = 3
@@ -85,7 +91,7 @@ Partial Class HomePage
         'lblChestA
         '
         Me.lblChestA.AutoSize = True
-        Me.lblChestA.Location = New System.Drawing.Point(51, 428)
+        Me.lblChestA.Location = New System.Drawing.Point(8, 10)
         Me.lblChestA.Name = "lblChestA"
         Me.lblChestA.Size = New System.Drawing.Size(60, 13)
         Me.lblChestA.TabIndex = 2
@@ -166,7 +172,7 @@ Partial Class HomePage
         'lblBowA
         '
         Me.lblBowA.AutoSize = True
-        Me.lblBowA.Location = New System.Drawing.Point(527, 234)
+        Me.lblBowA.Location = New System.Drawing.Point(511, 401)
         Me.lblBowA.Name = "lblBowA"
         Me.lblBowA.Size = New System.Drawing.Size(34, 13)
         Me.lblBowA.TabIndex = 12
@@ -175,7 +181,7 @@ Partial Class HomePage
         'cbBowA
         '
         Me.cbBowA.AutoSize = True
-        Me.cbBowA.Location = New System.Drawing.Point(545, 250)
+        Me.cbBowA.Location = New System.Drawing.Point(529, 417)
         Me.cbBowA.Name = "cbBowA"
         Me.cbBowA.Size = New System.Drawing.Size(44, 17)
         Me.cbBowA.TabIndex = 13
@@ -185,6 +191,7 @@ Partial Class HomePage
         'pnlSwordA
         '
         Me.pnlSwordA.BackColor = System.Drawing.SystemColors.AppWorkspace
+        Me.pnlSwordA.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.pnlSwordA.Controls.Add(Me.lblSwordDmgA)
         Me.pnlSwordA.Controls.Add(Me.lblSharpASword)
         Me.pnlSwordA.Controls.Add(Me.lbSharpASword)
@@ -230,6 +237,7 @@ Partial Class HomePage
         'pnlAxeA
         '
         Me.pnlAxeA.BackColor = System.Drawing.SystemColors.AppWorkspace
+        Me.pnlAxeA.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.pnlAxeA.Controls.Add(Me.lblSharpAAxe)
         Me.pnlAxeA.Controls.Add(Me.lbSharpAAxe)
         Me.pnlAxeA.Controls.Add(Me.lblAxeDmgA)
@@ -267,15 +275,16 @@ Partial Class HomePage
         Me.lblAxeDmgA.TabIndex = 16
         Me.lblAxeDmgA.Text = "0 (0)"
         '
-        'Panel1
+        'pnlExtrasA
         '
-        Me.Panel1.BackColor = System.Drawing.SystemColors.AppWorkspace
-        Me.Panel1.Controls.Add(Me.cbStrengthIIA)
-        Me.Panel1.Controls.Add(Me.cbStrengthIA)
-        Me.Panel1.Location = New System.Drawing.Point(390, 12)
-        Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(183, 153)
-        Me.Panel1.TabIndex = 16
+        Me.pnlExtrasA.BackColor = System.Drawing.SystemColors.AppWorkspace
+        Me.pnlExtrasA.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.pnlExtrasA.Controls.Add(Me.cbStrengthIIA)
+        Me.pnlExtrasA.Controls.Add(Me.cbStrengthIA)
+        Me.pnlExtrasA.Location = New System.Drawing.Point(390, 12)
+        Me.pnlExtrasA.Name = "pnlExtrasA"
+        Me.pnlExtrasA.Size = New System.Drawing.Size(183, 153)
+        Me.pnlExtrasA.TabIndex = 16
         '
         'cbStrengthIIA
         '
@@ -297,12 +306,56 @@ Partial Class HomePage
         Me.cbStrengthIA.Text = "Strength I?"
         Me.cbStrengthIA.UseVisualStyleBackColor = True
         '
+        'pnlHelmA
+        '
+        Me.pnlHelmA.BackColor = System.Drawing.SystemColors.AppWorkspace
+        Me.pnlHelmA.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.pnlHelmA.Controls.Add(Me.lblProtAHelm)
+        Me.pnlHelmA.Controls.Add(Me.lbProtAHelm)
+        Me.pnlHelmA.Controls.Add(Me.lbHelmA)
+        Me.pnlHelmA.Controls.Add(Me.LblHelmA)
+        Me.pnlHelmA.Location = New System.Drawing.Point(12, 171)
+        Me.pnlHelmA.Name = "pnlHelmA"
+        Me.pnlHelmA.Size = New System.Drawing.Size(183, 153)
+        Me.pnlHelmA.TabIndex = 17
+        '
+        'lblProtAHelm
+        '
+        Me.lblProtAHelm.AutoSize = True
+        Me.lblProtAHelm.Location = New System.Drawing.Point(9, 78)
+        Me.lblProtAHelm.Name = "lblProtAHelm"
+        Me.lblProtAHelm.Size = New System.Drawing.Size(58, 13)
+        Me.lblProtAHelm.TabIndex = 12
+        Me.lblProtAHelm.Text = "Protection:"
+        '
+        'lbProtAHelm
+        '
+        Me.lbProtAHelm.FormattingEnabled = True
+        Me.lbProtAHelm.Items.AddRange(New Object() {"(None)", "Prot I", "Prot II", "Prot III", "Prot IV"})
+        Me.lbProtAHelm.Location = New System.Drawing.Point(9, 94)
+        Me.lbProtAHelm.Name = "lbProtAHelm"
+        Me.lbProtAHelm.Size = New System.Drawing.Size(163, 43)
+        Me.lbProtAHelm.TabIndex = 13
+        '
+        'pnlChestA
+        '
+        Me.pnlChestA.BackColor = System.Drawing.SystemColors.AppWorkspace
+        Me.pnlChestA.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.pnlChestA.Controls.Add(Me.lbChestA)
+        Me.pnlChestA.Controls.Add(Me.lblChestA)
+        Me.pnlChestA.Location = New System.Drawing.Point(201, 171)
+        Me.pnlChestA.Name = "pnlChestA"
+        Me.pnlChestA.Size = New System.Drawing.Size(183, 153)
+        Me.pnlChestA.TabIndex = 18
+        '
         'HomePage
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(582, 179)
-        Me.Controls.Add(Me.Panel1)
+        Me.ClientSize = New System.Drawing.Size(868, 583)
+        Me.Controls.Add(Me.pnlChestA)
+        Me.Controls.Add(Me.pnlHelmA)
+        Me.Controls.Add(Me.pnlExtrasA)
         Me.Controls.Add(Me.pnlAxeA)
         Me.Controls.Add(Me.pnlSwordA)
         Me.Controls.Add(Me.cbBowA)
@@ -311,10 +364,6 @@ Partial Class HomePage
         Me.Controls.Add(Me.lblBootsA)
         Me.Controls.Add(Me.lbLeggingsA)
         Me.Controls.Add(Me.lblLeggingsA)
-        Me.Controls.Add(Me.lbChestA)
-        Me.Controls.Add(Me.lblChestA)
-        Me.Controls.Add(Me.lbHelmA)
-        Me.Controls.Add(Me.LblHelmA)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "HomePage"
         Me.Text = "Minecraft Damage Calculator (1.16.*)"
@@ -322,8 +371,12 @@ Partial Class HomePage
         Me.pnlSwordA.PerformLayout()
         Me.pnlAxeA.ResumeLayout(False)
         Me.pnlAxeA.PerformLayout()
-        Me.Panel1.ResumeLayout(False)
-        Me.Panel1.PerformLayout()
+        Me.pnlExtrasA.ResumeLayout(False)
+        Me.pnlExtrasA.PerformLayout()
+        Me.pnlHelmA.ResumeLayout(False)
+        Me.pnlHelmA.PerformLayout()
+        Me.pnlChestA.ResumeLayout(False)
+        Me.pnlChestA.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -352,7 +405,11 @@ Partial Class HomePage
     Friend WithEvents lblAxeDmgA As Label
     Friend WithEvents lblSharpAAxe As Label
     Friend WithEvents lbSharpAAxe As ListBox
-    Friend WithEvents Panel1 As Panel
+    Friend WithEvents pnlExtrasA As Panel
     Friend WithEvents cbStrengthIA As CheckBox
     Friend WithEvents cbStrengthIIA As CheckBox
+    Friend WithEvents pnlHelmA As Panel
+    Friend WithEvents pnlChestA As Panel
+    Friend WithEvents lblProtAHelm As Label
+    Friend WithEvents lbProtAHelm As ListBox
 End Class

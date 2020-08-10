@@ -2,8 +2,9 @@
 #Region "Global Variables"
     Dim SwordDmgValues = New Dictionary(Of String, Integer) From {{"Wood", 4}, {"Stone", 5}, {"Gold", 4}, {"Iron", 6}, {"Diamond", 7}, {"Netherite", 8}, {"(None)", 0}}
     Dim SharpLevelsDmg = New Dictionary(Of String, Integer) From {{"Sharp I", 1}, {"Sharp II", 2}, {"Sharp III", 3}, {"Sharp IV", 4}, {"Sharp V", 5}, {"None", 0}}
-    Dim ASwordDmg, AAxeDmg, AStrength As Double
     Dim AxeDmgValues = New Dictionary(Of String, Integer) From {{"Wood", 7}, {"Stone", 9}, {"Iron", 9}, {"Diamond", 9}, {"Gold", 7}, {"Netherite", 10}, {"(None)", 0}}
+    Dim ProtLevelsEPF = New Dictionary(Of String, Integer) From {{"Prot I", 1}, {"Prot II", 2}, {"Prot III", 3}, {"Prot IV", 4}}
+    Dim ASwordDmg, AAxeDmg, AStrength As Double
 #End Region
     Private Sub HomePage_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         lbSharpASword.SelectedItem = "(None)"
@@ -72,5 +73,8 @@
         Else
             AStrength = 0
         End If
+    End Sub
+    Private Sub lbHelmA_SelectedIndexChanged(sender As Object, e As EventArgs) Handles lbHelmA.SelectedIndexChanged
+
     End Sub
 End Class
