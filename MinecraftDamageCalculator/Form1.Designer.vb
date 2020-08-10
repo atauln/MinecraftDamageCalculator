@@ -280,7 +280,7 @@ Partial Class HomePage
         'cbStrengthIIA
         '
         Me.cbStrengthIIA.AutoSize = True
-        Me.cbStrengthIIA.Location = New System.Drawing.Point(14, 35)
+        Me.cbStrengthIIA.Location = New System.Drawing.Point(14, 28)
         Me.cbStrengthIIA.Name = "cbStrengthIIA"
         Me.cbStrengthIIA.Size = New System.Drawing.Size(81, 17)
         Me.cbStrengthIIA.TabIndex = 18
@@ -301,7 +301,7 @@ Partial Class HomePage
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(926, 699)
+        Me.ClientSize = New System.Drawing.Size(582, 179)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.pnlAxeA)
         Me.Controls.Add(Me.pnlSwordA)
