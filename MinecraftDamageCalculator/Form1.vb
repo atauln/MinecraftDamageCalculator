@@ -77,19 +77,19 @@
         Else
             lblCombatRating.ForeColor = Color.Green
         End If
-        If Convert.ToInt32(lblArmorRating.Text) < 300 Then
+        If Convert.ToDouble(lblArmorRating.Text) < 300 Then
             lblArmorRating.ForeColor = Color.Red
-        ElseIf Convert.ToInt32(lblArmorRating.Text) < 650 Then
+        ElseIf Convert.ToDouble(lblArmorRating.Text) < 650 Then
             lblArmorRating.ForeColor = Color.Orange
         Else
             lblArmorRating.ForeColor = Color.Green
         End If
-        If Convert.ToInt32(lblOverallRating.Text) < 250 Then
-            lblArmorRating.ForeColor = Color.Red
-        ElseIf Convert.ToInt32(lblOverallRating.Text) < 475 Then
-            lblArmorRating.ForeColor = Color.Orange
+        If Convert.ToDouble(lblOverallRating.Text) < 250 Then
+            lblOverallRating.ForeColor = Color.Red
+        ElseIf Convert.ToDouble(lblOverallRating.Text) < 475 Then
+            lblOverallRating.ForeColor = Color.Orange
         Else
-            lblArmorRating.ForeColor = Color.Green
+            lblOverallRating.ForeColor = Color.Green
         End If
     End Sub
     Private Sub lbSwordsA_SelectedIndexChanged(sender As Object, e As EventArgs) Handles lbSwordsA.SelectedIndexChanged
