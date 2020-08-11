@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class HomePage
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class HomePage
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(HomePage))
@@ -51,14 +51,22 @@ Partial Class HomePage
         Me.cbStrengthIIA = New System.Windows.Forms.CheckBox()
         Me.cbStrengthIA = New System.Windows.Forms.CheckBox()
         Me.pnlHelmA = New System.Windows.Forms.Panel()
+        Me.lblHelmDefA = New System.Windows.Forms.Label()
         Me.lblProtAHelm = New System.Windows.Forms.Label()
         Me.lbProtAHelm = New System.Windows.Forms.ListBox()
         Me.pnlChestA = New System.Windows.Forms.Panel()
+        Me.lblChestDefA = New System.Windows.Forms.Label()
+        Me.pnlLeggingsA = New System.Windows.Forms.Panel()
+        Me.lblLeggingsDefA = New System.Windows.Forms.Label()
+        Me.pnlBootsA = New System.Windows.Forms.Panel()
+        Me.lblBootsDefA = New System.Windows.Forms.Label()
         Me.pnlSwordA.SuspendLayout()
         Me.pnlAxeA.SuspendLayout()
         Me.pnlExtrasA.SuspendLayout()
         Me.pnlHelmA.SuspendLayout()
         Me.pnlChestA.SuspendLayout()
+        Me.pnlLeggingsA.SuspendLayout()
+        Me.pnlBootsA.SuspendLayout()
         Me.SuspendLayout()
         '
         'LblHelmA
@@ -101,7 +109,7 @@ Partial Class HomePage
         '
         Me.lbLeggingsA.FormattingEnabled = True
         Me.lbLeggingsA.Items.AddRange(New Object() {"(None)", "Leather", "Chainmail", "Iron", "Gold", "Diamond", "Netherite"})
-        Me.lbLeggingsA.Location = New System.Drawing.Point(86, 595)
+        Me.lbLeggingsA.Location = New System.Drawing.Point(9, 26)
         Me.lbLeggingsA.Name = "lbLeggingsA"
         Me.lbLeggingsA.Size = New System.Drawing.Size(163, 43)
         Me.lbLeggingsA.TabIndex = 5
@@ -109,7 +117,7 @@ Partial Class HomePage
         'lblLeggingsA
         '
         Me.lblLeggingsA.AutoSize = True
-        Me.lblLeggingsA.Location = New System.Drawing.Point(83, 579)
+        Me.lblLeggingsA.Location = New System.Drawing.Point(6, 10)
         Me.lblLeggingsA.Name = "lblLeggingsA"
         Me.lblLeggingsA.Size = New System.Drawing.Size(53, 13)
         Me.lblLeggingsA.TabIndex = 4
@@ -119,7 +127,7 @@ Partial Class HomePage
         '
         Me.lbBootsA.FormattingEnabled = True
         Me.lbBootsA.Items.AddRange(New Object() {"(None)", "Leather", "Chainmail", "Turtle", "Gold", "Diamond", "Netherite"})
-        Me.lbBootsA.Location = New System.Drawing.Point(320, 508)
+        Me.lbBootsA.Location = New System.Drawing.Point(9, 26)
         Me.lbBootsA.Name = "lbBootsA"
         Me.lbBootsA.Size = New System.Drawing.Size(163, 43)
         Me.lbBootsA.TabIndex = 7
@@ -127,7 +135,7 @@ Partial Class HomePage
         'lblBootsA
         '
         Me.lblBootsA.AutoSize = True
-        Me.lblBootsA.Location = New System.Drawing.Point(317, 492)
+        Me.lblBootsA.Location = New System.Drawing.Point(6, 10)
         Me.lblBootsA.Name = "lblBootsA"
         Me.lblBootsA.Size = New System.Drawing.Size(37, 13)
         Me.lblBootsA.TabIndex = 6
@@ -310,6 +318,7 @@ Partial Class HomePage
         '
         Me.pnlHelmA.BackColor = System.Drawing.SystemColors.AppWorkspace
         Me.pnlHelmA.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.pnlHelmA.Controls.Add(Me.lblHelmDefA)
         Me.pnlHelmA.Controls.Add(Me.lblProtAHelm)
         Me.pnlHelmA.Controls.Add(Me.lbProtAHelm)
         Me.pnlHelmA.Controls.Add(Me.lbHelmA)
@@ -318,6 +327,15 @@ Partial Class HomePage
         Me.pnlHelmA.Name = "pnlHelmA"
         Me.pnlHelmA.Size = New System.Drawing.Size(183, 153)
         Me.pnlHelmA.TabIndex = 17
+        '
+        'lblHelmDefA
+        '
+        Me.lblHelmDefA.AutoSize = True
+        Me.lblHelmDefA.Location = New System.Drawing.Point(58, 10)
+        Me.lblHelmDefA.Name = "lblHelmDefA"
+        Me.lblHelmDefA.Size = New System.Drawing.Size(13, 13)
+        Me.lblHelmDefA.TabIndex = 16
+        Me.lblHelmDefA.Text = "0"
         '
         'lblProtAHelm
         '
@@ -341,6 +359,7 @@ Partial Class HomePage
         '
         Me.pnlChestA.BackColor = System.Drawing.SystemColors.AppWorkspace
         Me.pnlChestA.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.pnlChestA.Controls.Add(Me.lblChestDefA)
         Me.pnlChestA.Controls.Add(Me.lbChestA)
         Me.pnlChestA.Controls.Add(Me.lblChestA)
         Me.pnlChestA.Location = New System.Drawing.Point(201, 171)
@@ -348,11 +367,64 @@ Partial Class HomePage
         Me.pnlChestA.Size = New System.Drawing.Size(183, 153)
         Me.pnlChestA.TabIndex = 18
         '
+        'lblChestDefA
+        '
+        Me.lblChestDefA.AutoSize = True
+        Me.lblChestDefA.Location = New System.Drawing.Point(74, 10)
+        Me.lblChestDefA.Name = "lblChestDefA"
+        Me.lblChestDefA.Size = New System.Drawing.Size(13, 13)
+        Me.lblChestDefA.TabIndex = 17
+        Me.lblChestDefA.Text = "0"
+        '
+        'pnlLeggingsA
+        '
+        Me.pnlLeggingsA.BackColor = System.Drawing.SystemColors.AppWorkspace
+        Me.pnlLeggingsA.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.pnlLeggingsA.Controls.Add(Me.lblLeggingsDefA)
+        Me.pnlLeggingsA.Controls.Add(Me.lbLeggingsA)
+        Me.pnlLeggingsA.Controls.Add(Me.lblLeggingsA)
+        Me.pnlLeggingsA.Location = New System.Drawing.Point(12, 330)
+        Me.pnlLeggingsA.Name = "pnlLeggingsA"
+        Me.pnlLeggingsA.Size = New System.Drawing.Size(183, 153)
+        Me.pnlLeggingsA.TabIndex = 19
+        '
+        'lblLeggingsDefA
+        '
+        Me.lblLeggingsDefA.AutoSize = True
+        Me.lblLeggingsDefA.Location = New System.Drawing.Point(65, 10)
+        Me.lblLeggingsDefA.Name = "lblLeggingsDefA"
+        Me.lblLeggingsDefA.Size = New System.Drawing.Size(13, 13)
+        Me.lblLeggingsDefA.TabIndex = 17
+        Me.lblLeggingsDefA.Text = "0"
+        '
+        'pnlBootsA
+        '
+        Me.pnlBootsA.BackColor = System.Drawing.SystemColors.AppWorkspace
+        Me.pnlBootsA.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.pnlBootsA.Controls.Add(Me.lblBootsDefA)
+        Me.pnlBootsA.Controls.Add(Me.lbBootsA)
+        Me.pnlBootsA.Controls.Add(Me.lblBootsA)
+        Me.pnlBootsA.Location = New System.Drawing.Point(201, 330)
+        Me.pnlBootsA.Name = "pnlBootsA"
+        Me.pnlBootsA.Size = New System.Drawing.Size(183, 153)
+        Me.pnlBootsA.TabIndex = 20
+        '
+        'lblBootsDefA
+        '
+        Me.lblBootsDefA.AutoSize = True
+        Me.lblBootsDefA.Location = New System.Drawing.Point(49, 10)
+        Me.lblBootsDefA.Name = "lblBootsDefA"
+        Me.lblBootsDefA.Size = New System.Drawing.Size(13, 13)
+        Me.lblBootsDefA.TabIndex = 17
+        Me.lblBootsDefA.Text = "0"
+        '
         'HomePage
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(868, 583)
+        Me.ClientSize = New System.Drawing.Size(1065, 756)
+        Me.Controls.Add(Me.pnlBootsA)
+        Me.Controls.Add(Me.pnlLeggingsA)
         Me.Controls.Add(Me.pnlChestA)
         Me.Controls.Add(Me.pnlHelmA)
         Me.Controls.Add(Me.pnlExtrasA)
@@ -360,10 +432,6 @@ Partial Class HomePage
         Me.Controls.Add(Me.pnlSwordA)
         Me.Controls.Add(Me.cbBowA)
         Me.Controls.Add(Me.lblBowA)
-        Me.Controls.Add(Me.lbBootsA)
-        Me.Controls.Add(Me.lblBootsA)
-        Me.Controls.Add(Me.lbLeggingsA)
-        Me.Controls.Add(Me.lblLeggingsA)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "HomePage"
         Me.Text = "Minecraft Damage Calculator (1.16.*)"
@@ -377,6 +445,10 @@ Partial Class HomePage
         Me.pnlHelmA.PerformLayout()
         Me.pnlChestA.ResumeLayout(False)
         Me.pnlChestA.PerformLayout()
+        Me.pnlLeggingsA.ResumeLayout(False)
+        Me.pnlLeggingsA.PerformLayout()
+        Me.pnlBootsA.ResumeLayout(False)
+        Me.pnlBootsA.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -412,4 +484,10 @@ Partial Class HomePage
     Friend WithEvents pnlChestA As Panel
     Friend WithEvents lblProtAHelm As Label
     Friend WithEvents lbProtAHelm As ListBox
+    Friend WithEvents lblHelmDefA As Label
+    Friend WithEvents lblChestDefA As Label
+    Friend WithEvents pnlLeggingsA As Panel
+    Friend WithEvents lblLeggingsDefA As Label
+    Friend WithEvents pnlBootsA As Panel
+    Friend WithEvents lblBootsDefA As Label
 End Class
