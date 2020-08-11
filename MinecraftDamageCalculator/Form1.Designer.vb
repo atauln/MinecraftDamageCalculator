@@ -230,7 +230,7 @@ Partial Class HomePage
         Me.pnlSwordA.Controls.Add(Me.lbSharpASword)
         Me.pnlSwordA.Controls.Add(Me.lblSwordA)
         Me.pnlSwordA.Controls.Add(Me.lbSwordsA)
-        Me.pnlSwordA.Location = New System.Drawing.Point(12, 12)
+        Me.pnlSwordA.Location = New System.Drawing.Point(6, 10)
         Me.pnlSwordA.Name = "pnlSwordA"
         Me.pnlSwordA.Size = New System.Drawing.Size(183, 153)
         Me.pnlSwordA.TabIndex = 14
@@ -277,7 +277,7 @@ Partial Class HomePage
         Me.pnlAxeA.Controls.Add(Me.lblAxeDmgA)
         Me.pnlAxeA.Controls.Add(Me.lbAxeA)
         Me.pnlAxeA.Controls.Add(Me.lblAxeA)
-        Me.pnlAxeA.Location = New System.Drawing.Point(201, 12)
+        Me.pnlAxeA.Location = New System.Drawing.Point(195, 10)
         Me.pnlAxeA.Name = "pnlAxeA"
         Me.pnlAxeA.Size = New System.Drawing.Size(183, 153)
         Me.pnlAxeA.TabIndex = 15
@@ -316,7 +316,7 @@ Partial Class HomePage
         Me.pnlExtrasA.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.pnlExtrasA.Controls.Add(Me.cbStrengthIIA)
         Me.pnlExtrasA.Controls.Add(Me.cbStrengthIA)
-        Me.pnlExtrasA.Location = New System.Drawing.Point(390, 171)
+        Me.pnlExtrasA.Location = New System.Drawing.Point(384, 169)
         Me.pnlExtrasA.Name = "pnlExtrasA"
         Me.pnlExtrasA.Size = New System.Drawing.Size(183, 153)
         Me.pnlExtrasA.TabIndex = 16
@@ -352,7 +352,7 @@ Partial Class HomePage
         Me.pnlHelmA.Controls.Add(Me.lbProtAHelm)
         Me.pnlHelmA.Controls.Add(Me.lbHelmA)
         Me.pnlHelmA.Controls.Add(Me.LblHelmA)
-        Me.pnlHelmA.Location = New System.Drawing.Point(12, 171)
+        Me.pnlHelmA.Location = New System.Drawing.Point(6, 169)
         Me.pnlHelmA.Name = "pnlHelmA"
         Me.pnlHelmA.Size = New System.Drawing.Size(183, 153)
         Me.pnlHelmA.TabIndex = 17
@@ -404,7 +404,7 @@ Partial Class HomePage
         Me.pnlChestA.Controls.Add(Me.lblChestDefA)
         Me.pnlChestA.Controls.Add(Me.lbChestA)
         Me.pnlChestA.Controls.Add(Me.lblChestA)
-        Me.pnlChestA.Location = New System.Drawing.Point(201, 171)
+        Me.pnlChestA.Location = New System.Drawing.Point(195, 169)
         Me.pnlChestA.Name = "pnlChestA"
         Me.pnlChestA.Size = New System.Drawing.Size(183, 153)
         Me.pnlChestA.TabIndex = 18
@@ -456,7 +456,7 @@ Partial Class HomePage
         Me.pnlLeggingsA.Controls.Add(Me.lblLeggingsDefA)
         Me.pnlLeggingsA.Controls.Add(Me.lbLeggingsA)
         Me.pnlLeggingsA.Controls.Add(Me.lblLeggingsA)
-        Me.pnlLeggingsA.Location = New System.Drawing.Point(12, 330)
+        Me.pnlLeggingsA.Location = New System.Drawing.Point(6, 328)
         Me.pnlLeggingsA.Name = "pnlLeggingsA"
         Me.pnlLeggingsA.Size = New System.Drawing.Size(183, 153)
         Me.pnlLeggingsA.TabIndex = 19
@@ -508,7 +508,7 @@ Partial Class HomePage
         Me.pnlBootsA.Controls.Add(Me.lblBootsDefA)
         Me.pnlBootsA.Controls.Add(Me.lbBootsA)
         Me.pnlBootsA.Controls.Add(Me.lblBootsA)
-        Me.pnlBootsA.Location = New System.Drawing.Point(201, 330)
+        Me.pnlBootsA.Location = New System.Drawing.Point(195, 328)
         Me.pnlBootsA.Name = "pnlBootsA"
         Me.pnlBootsA.Size = New System.Drawing.Size(183, 153)
         Me.pnlBootsA.TabIndex = 20
@@ -558,7 +558,7 @@ Partial Class HomePage
         Me.Panel1.Controls.Add(Me.lblEPFA)
         Me.Panel1.Controls.Add(Me.lblToughnessA)
         Me.Panel1.Controls.Add(Me.lblDefPointsA)
-        Me.Panel1.Location = New System.Drawing.Point(390, 330)
+        Me.Panel1.Location = New System.Drawing.Point(384, 328)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(183, 153)
         Me.Panel1.TabIndex = 19
@@ -609,7 +609,7 @@ Partial Class HomePage
         Me.pnlBowA.Controls.Add(Me.lblBowDmgA)
         Me.pnlBowA.Controls.Add(Me.cbBowA)
         Me.pnlBowA.Controls.Add(Me.lblBowA)
-        Me.pnlBowA.Location = New System.Drawing.Point(390, 12)
+        Me.pnlBowA.Location = New System.Drawing.Point(384, 10)
         Me.pnlBowA.Name = "pnlBowA"
         Me.pnlBowA.Size = New System.Drawing.Size(183, 153)
         Me.pnlBowA.TabIndex = 19
@@ -644,8 +644,9 @@ Partial Class HomePage
         'lblCombatRating
         '
         Me.lblCombatRating.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.lblCombatRating.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lblCombatRating.Font = New System.Drawing.Font("Microsoft Sans Serif", 40.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblCombatRating.Location = New System.Drawing.Point(579, 12)
+        Me.lblCombatRating.Location = New System.Drawing.Point(573, 10)
         Me.lblCombatRating.Name = "lblCombatRating"
         Me.lblCombatRating.Size = New System.Drawing.Size(183, 153)
         Me.lblCombatRating.TabIndex = 21
@@ -655,8 +656,9 @@ Partial Class HomePage
         'lblArmorRating
         '
         Me.lblArmorRating.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.lblArmorRating.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lblArmorRating.Font = New System.Drawing.Font("Microsoft Sans Serif", 40.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblArmorRating.Location = New System.Drawing.Point(579, 171)
+        Me.lblArmorRating.Location = New System.Drawing.Point(573, 169)
         Me.lblArmorRating.Name = "lblArmorRating"
         Me.lblArmorRating.Size = New System.Drawing.Size(183, 153)
         Me.lblArmorRating.TabIndex = 22
@@ -666,8 +668,9 @@ Partial Class HomePage
         'lblOverallRating
         '
         Me.lblOverallRating.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.lblOverallRating.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lblOverallRating.Font = New System.Drawing.Font("Microsoft Sans Serif", 40.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblOverallRating.Location = New System.Drawing.Point(579, 330)
+        Me.lblOverallRating.Location = New System.Drawing.Point(573, 328)
         Me.lblOverallRating.Name = "lblOverallRating"
         Me.lblOverallRating.Size = New System.Drawing.Size(183, 153)
         Me.lblOverallRating.TabIndex = 23
@@ -679,7 +682,7 @@ Partial Class HomePage
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoSize = True
-        Me.ClientSize = New System.Drawing.Size(768, 485)
+        Me.ClientSize = New System.Drawing.Size(763, 493)
         Me.Controls.Add(Me.lblOverallRating)
         Me.Controls.Add(Me.lblArmorRating)
         Me.Controls.Add(Me.lblCombatRating)
