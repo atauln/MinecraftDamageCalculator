@@ -48,7 +48,7 @@
             lblArmorDRA.Text = "Armor DR (%): " + DRA.ToString
             lblArmorRating.Text = Math.Round(DRA * 10, 1)
         End If
-        lblOverallRating.Text = Math.Round((Convert.ToInt32(lblArmorRating.Text) + CR) / 2, 1)
+        lblOverallRating.Text = Math.Round((Convert.ToDouble(lblArmorRating.Text) + CR) / 2, 1)
         If lbSharpASword.SelectedItem <> "(None)" Then
             ASwordDmg = SwordDmgValues(lbSwordsA.SelectedItem) + (0.5 * SharpLevelsDmg(lbSharpASword.SelectedItem) + 0.5) + AStrength
         Else
