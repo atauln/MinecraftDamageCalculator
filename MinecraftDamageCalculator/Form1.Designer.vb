@@ -51,15 +51,37 @@ Partial Class HomePage
         Me.cbStrengthIIA = New System.Windows.Forms.CheckBox()
         Me.cbStrengthIA = New System.Windows.Forms.CheckBox()
         Me.pnlHelmA = New System.Windows.Forms.Panel()
+        Me.lblHelmEPFA = New System.Windows.Forms.Label()
         Me.lblHelmDefA = New System.Windows.Forms.Label()
         Me.lblProtAHelm = New System.Windows.Forms.Label()
         Me.lbProtAHelm = New System.Windows.Forms.ListBox()
         Me.pnlChestA = New System.Windows.Forms.Panel()
+        Me.lblChestEPFA = New System.Windows.Forms.Label()
+        Me.lblProtAChest = New System.Windows.Forms.Label()
+        Me.lbProtAChest = New System.Windows.Forms.ListBox()
         Me.lblChestDefA = New System.Windows.Forms.Label()
         Me.pnlLeggingsA = New System.Windows.Forms.Panel()
+        Me.lblLeggingsEPFA = New System.Windows.Forms.Label()
+        Me.lblProtALeggings = New System.Windows.Forms.Label()
+        Me.lbProtALeggings = New System.Windows.Forms.ListBox()
         Me.lblLeggingsDefA = New System.Windows.Forms.Label()
         Me.pnlBootsA = New System.Windows.Forms.Panel()
+        Me.lblBootsEPFA = New System.Windows.Forms.Label()
+        Me.lblProtABoots = New System.Windows.Forms.Label()
+        Me.lbProtABoots = New System.Windows.Forms.ListBox()
         Me.lblBootsDefA = New System.Windows.Forms.Label()
+        Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.lblArmorDRA = New System.Windows.Forms.Label()
+        Me.lblEPFA = New System.Windows.Forms.Label()
+        Me.lblToughnessA = New System.Windows.Forms.Label()
+        Me.lblDefPointsA = New System.Windows.Forms.Label()
+        Me.pnlBowA = New System.Windows.Forms.Panel()
+        Me.lblPowerA = New System.Windows.Forms.Label()
+        Me.lbPower = New System.Windows.Forms.ListBox()
+        Me.lblBowDmgA = New System.Windows.Forms.Label()
+        Me.lblCombatRating = New System.Windows.Forms.Label()
+        Me.lblArmorRating = New System.Windows.Forms.Label()
+        Me.lblOverallRating = New System.Windows.Forms.Label()
         Me.pnlSwordA.SuspendLayout()
         Me.pnlAxeA.SuspendLayout()
         Me.pnlExtrasA.SuspendLayout()
@@ -67,6 +89,8 @@ Partial Class HomePage
         Me.pnlChestA.SuspendLayout()
         Me.pnlLeggingsA.SuspendLayout()
         Me.pnlBootsA.SuspendLayout()
+        Me.Panel1.SuspendLayout()
+        Me.pnlBowA.SuspendLayout()
         Me.SuspendLayout()
         '
         'LblHelmA
@@ -126,7 +150,7 @@ Partial Class HomePage
         'lbBootsA
         '
         Me.lbBootsA.FormattingEnabled = True
-        Me.lbBootsA.Items.AddRange(New Object() {"(None)", "Leather", "Chainmail", "Turtle", "Gold", "Diamond", "Netherite"})
+        Me.lbBootsA.Items.AddRange(New Object() {"(None)", "Leather", "Chainmail", "Iron", "Gold", "Diamond", "Netherite"})
         Me.lbBootsA.Location = New System.Drawing.Point(9, 26)
         Me.lbBootsA.Name = "lbBootsA"
         Me.lbBootsA.Size = New System.Drawing.Size(163, 43)
@@ -180,7 +204,7 @@ Partial Class HomePage
         'lblBowA
         '
         Me.lblBowA.AutoSize = True
-        Me.lblBowA.Location = New System.Drawing.Point(511, 401)
+        Me.lblBowA.Location = New System.Drawing.Point(16, 12)
         Me.lblBowA.Name = "lblBowA"
         Me.lblBowA.Size = New System.Drawing.Size(34, 13)
         Me.lblBowA.TabIndex = 12
@@ -189,7 +213,7 @@ Partial Class HomePage
         'cbBowA
         '
         Me.cbBowA.AutoSize = True
-        Me.cbBowA.Location = New System.Drawing.Point(529, 417)
+        Me.cbBowA.Location = New System.Drawing.Point(34, 28)
         Me.cbBowA.Name = "cbBowA"
         Me.cbBowA.Size = New System.Drawing.Size(44, 17)
         Me.cbBowA.TabIndex = 13
@@ -198,6 +222,7 @@ Partial Class HomePage
         '
         'pnlSwordA
         '
+        Me.pnlSwordA.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.pnlSwordA.BackColor = System.Drawing.SystemColors.AppWorkspace
         Me.pnlSwordA.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.pnlSwordA.Controls.Add(Me.lblSwordDmgA)
@@ -244,6 +269,7 @@ Partial Class HomePage
         '
         'pnlAxeA
         '
+        Me.pnlAxeA.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.pnlAxeA.BackColor = System.Drawing.SystemColors.AppWorkspace
         Me.pnlAxeA.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.pnlAxeA.Controls.Add(Me.lblSharpAAxe)
@@ -285,11 +311,12 @@ Partial Class HomePage
         '
         'pnlExtrasA
         '
+        Me.pnlExtrasA.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.pnlExtrasA.BackColor = System.Drawing.SystemColors.AppWorkspace
         Me.pnlExtrasA.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.pnlExtrasA.Controls.Add(Me.cbStrengthIIA)
         Me.pnlExtrasA.Controls.Add(Me.cbStrengthIA)
-        Me.pnlExtrasA.Location = New System.Drawing.Point(390, 12)
+        Me.pnlExtrasA.Location = New System.Drawing.Point(390, 171)
         Me.pnlExtrasA.Name = "pnlExtrasA"
         Me.pnlExtrasA.Size = New System.Drawing.Size(183, 153)
         Me.pnlExtrasA.TabIndex = 16
@@ -316,8 +343,10 @@ Partial Class HomePage
         '
         'pnlHelmA
         '
+        Me.pnlHelmA.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.pnlHelmA.BackColor = System.Drawing.SystemColors.AppWorkspace
         Me.pnlHelmA.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.pnlHelmA.Controls.Add(Me.lblHelmEPFA)
         Me.pnlHelmA.Controls.Add(Me.lblHelmDefA)
         Me.pnlHelmA.Controls.Add(Me.lblProtAHelm)
         Me.pnlHelmA.Controls.Add(Me.lbProtAHelm)
@@ -327,6 +356,15 @@ Partial Class HomePage
         Me.pnlHelmA.Name = "pnlHelmA"
         Me.pnlHelmA.Size = New System.Drawing.Size(183, 153)
         Me.pnlHelmA.TabIndex = 17
+        '
+        'lblHelmEPFA
+        '
+        Me.lblHelmEPFA.AutoSize = True
+        Me.lblHelmEPFA.Location = New System.Drawing.Point(73, 78)
+        Me.lblHelmEPFA.Name = "lblHelmEPFA"
+        Me.lblHelmEPFA.Size = New System.Drawing.Size(13, 13)
+        Me.lblHelmEPFA.TabIndex = 21
+        Me.lblHelmEPFA.Text = "0"
         '
         'lblHelmDefA
         '
@@ -357,8 +395,12 @@ Partial Class HomePage
         '
         'pnlChestA
         '
+        Me.pnlChestA.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.pnlChestA.BackColor = System.Drawing.SystemColors.AppWorkspace
         Me.pnlChestA.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.pnlChestA.Controls.Add(Me.lblChestEPFA)
+        Me.pnlChestA.Controls.Add(Me.lblProtAChest)
+        Me.pnlChestA.Controls.Add(Me.lbProtAChest)
         Me.pnlChestA.Controls.Add(Me.lblChestDefA)
         Me.pnlChestA.Controls.Add(Me.lbChestA)
         Me.pnlChestA.Controls.Add(Me.lblChestA)
@@ -366,6 +408,33 @@ Partial Class HomePage
         Me.pnlChestA.Name = "pnlChestA"
         Me.pnlChestA.Size = New System.Drawing.Size(183, 153)
         Me.pnlChestA.TabIndex = 18
+        '
+        'lblChestEPFA
+        '
+        Me.lblChestEPFA.AutoSize = True
+        Me.lblChestEPFA.Location = New System.Drawing.Point(73, 78)
+        Me.lblChestEPFA.Name = "lblChestEPFA"
+        Me.lblChestEPFA.Size = New System.Drawing.Size(13, 13)
+        Me.lblChestEPFA.TabIndex = 22
+        Me.lblChestEPFA.Text = "0"
+        '
+        'lblProtAChest
+        '
+        Me.lblProtAChest.AutoSize = True
+        Me.lblProtAChest.Location = New System.Drawing.Point(9, 78)
+        Me.lblProtAChest.Name = "lblProtAChest"
+        Me.lblProtAChest.Size = New System.Drawing.Size(58, 13)
+        Me.lblProtAChest.TabIndex = 18
+        Me.lblProtAChest.Text = "Protection:"
+        '
+        'lbProtAChest
+        '
+        Me.lbProtAChest.FormattingEnabled = True
+        Me.lbProtAChest.Items.AddRange(New Object() {"(None)", "Prot I", "Prot II", "Prot III", "Prot IV"})
+        Me.lbProtAChest.Location = New System.Drawing.Point(9, 94)
+        Me.lbProtAChest.Name = "lbProtAChest"
+        Me.lbProtAChest.Size = New System.Drawing.Size(163, 43)
+        Me.lbProtAChest.TabIndex = 19
         '
         'lblChestDefA
         '
@@ -378,8 +447,12 @@ Partial Class HomePage
         '
         'pnlLeggingsA
         '
+        Me.pnlLeggingsA.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.pnlLeggingsA.BackColor = System.Drawing.SystemColors.AppWorkspace
         Me.pnlLeggingsA.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.pnlLeggingsA.Controls.Add(Me.lblLeggingsEPFA)
+        Me.pnlLeggingsA.Controls.Add(Me.lblProtALeggings)
+        Me.pnlLeggingsA.Controls.Add(Me.lbProtALeggings)
         Me.pnlLeggingsA.Controls.Add(Me.lblLeggingsDefA)
         Me.pnlLeggingsA.Controls.Add(Me.lbLeggingsA)
         Me.pnlLeggingsA.Controls.Add(Me.lblLeggingsA)
@@ -387,6 +460,33 @@ Partial Class HomePage
         Me.pnlLeggingsA.Name = "pnlLeggingsA"
         Me.pnlLeggingsA.Size = New System.Drawing.Size(183, 153)
         Me.pnlLeggingsA.TabIndex = 19
+        '
+        'lblLeggingsEPFA
+        '
+        Me.lblLeggingsEPFA.AutoSize = True
+        Me.lblLeggingsEPFA.Location = New System.Drawing.Point(73, 78)
+        Me.lblLeggingsEPFA.Name = "lblLeggingsEPFA"
+        Me.lblLeggingsEPFA.Size = New System.Drawing.Size(13, 13)
+        Me.lblLeggingsEPFA.TabIndex = 22
+        Me.lblLeggingsEPFA.Text = "0"
+        '
+        'lblProtALeggings
+        '
+        Me.lblProtALeggings.AutoSize = True
+        Me.lblProtALeggings.Location = New System.Drawing.Point(9, 78)
+        Me.lblProtALeggings.Name = "lblProtALeggings"
+        Me.lblProtALeggings.Size = New System.Drawing.Size(58, 13)
+        Me.lblProtALeggings.TabIndex = 18
+        Me.lblProtALeggings.Text = "Protection:"
+        '
+        'lbProtALeggings
+        '
+        Me.lbProtALeggings.FormattingEnabled = True
+        Me.lbProtALeggings.Items.AddRange(New Object() {"(None)", "Prot I", "Prot II", "Prot III", "Prot IV"})
+        Me.lbProtALeggings.Location = New System.Drawing.Point(9, 94)
+        Me.lbProtALeggings.Name = "lbProtALeggings"
+        Me.lbProtALeggings.Size = New System.Drawing.Size(163, 43)
+        Me.lbProtALeggings.TabIndex = 19
         '
         'lblLeggingsDefA
         '
@@ -399,8 +499,12 @@ Partial Class HomePage
         '
         'pnlBootsA
         '
+        Me.pnlBootsA.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.pnlBootsA.BackColor = System.Drawing.SystemColors.AppWorkspace
         Me.pnlBootsA.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.pnlBootsA.Controls.Add(Me.lblBootsEPFA)
+        Me.pnlBootsA.Controls.Add(Me.lblProtABoots)
+        Me.pnlBootsA.Controls.Add(Me.lbProtABoots)
         Me.pnlBootsA.Controls.Add(Me.lblBootsDefA)
         Me.pnlBootsA.Controls.Add(Me.lbBootsA)
         Me.pnlBootsA.Controls.Add(Me.lblBootsA)
@@ -408,6 +512,33 @@ Partial Class HomePage
         Me.pnlBootsA.Name = "pnlBootsA"
         Me.pnlBootsA.Size = New System.Drawing.Size(183, 153)
         Me.pnlBootsA.TabIndex = 20
+        '
+        'lblBootsEPFA
+        '
+        Me.lblBootsEPFA.AutoSize = True
+        Me.lblBootsEPFA.Location = New System.Drawing.Point(73, 78)
+        Me.lblBootsEPFA.Name = "lblBootsEPFA"
+        Me.lblBootsEPFA.Size = New System.Drawing.Size(13, 13)
+        Me.lblBootsEPFA.TabIndex = 22
+        Me.lblBootsEPFA.Text = "0"
+        '
+        'lblProtABoots
+        '
+        Me.lblProtABoots.AutoSize = True
+        Me.lblProtABoots.Location = New System.Drawing.Point(9, 78)
+        Me.lblProtABoots.Name = "lblProtABoots"
+        Me.lblProtABoots.Size = New System.Drawing.Size(58, 13)
+        Me.lblProtABoots.TabIndex = 18
+        Me.lblProtABoots.Text = "Protection:"
+        '
+        'lbProtABoots
+        '
+        Me.lbProtABoots.FormattingEnabled = True
+        Me.lbProtABoots.Items.AddRange(New Object() {"(None)", "Prot I", "Prot II", "Prot III", "Prot IV"})
+        Me.lbProtABoots.Location = New System.Drawing.Point(9, 94)
+        Me.lbProtABoots.Name = "lbProtABoots"
+        Me.lbProtABoots.Size = New System.Drawing.Size(163, 43)
+        Me.lbProtABoots.TabIndex = 19
         '
         'lblBootsDefA
         '
@@ -418,11 +549,142 @@ Partial Class HomePage
         Me.lblBootsDefA.TabIndex = 17
         Me.lblBootsDefA.Text = "0"
         '
+        'Panel1
+        '
+        Me.Panel1.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.Panel1.BackColor = System.Drawing.SystemColors.AppWorkspace
+        Me.Panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Panel1.Controls.Add(Me.lblArmorDRA)
+        Me.Panel1.Controls.Add(Me.lblEPFA)
+        Me.Panel1.Controls.Add(Me.lblToughnessA)
+        Me.Panel1.Controls.Add(Me.lblDefPointsA)
+        Me.Panel1.Location = New System.Drawing.Point(390, 330)
+        Me.Panel1.Name = "Panel1"
+        Me.Panel1.Size = New System.Drawing.Size(183, 153)
+        Me.Panel1.TabIndex = 19
+        '
+        'lblArmorDRA
+        '
+        Me.lblArmorDRA.AutoSize = True
+        Me.lblArmorDRA.Location = New System.Drawing.Point(11, 49)
+        Me.lblArmorDRA.Name = "lblArmorDRA"
+        Me.lblArmorDRA.Size = New System.Drawing.Size(82, 13)
+        Me.lblArmorDRA.TabIndex = 24
+        Me.lblArmorDRA.Text = "Armor DR (%): 0"
+        '
+        'lblEPFA
+        '
+        Me.lblEPFA.AutoSize = True
+        Me.lblEPFA.Location = New System.Drawing.Point(11, 36)
+        Me.lblEPFA.Name = "lblEPFA"
+        Me.lblEPFA.Size = New System.Drawing.Size(39, 13)
+        Me.lblEPFA.TabIndex = 23
+        Me.lblEPFA.Text = "EPF: 0"
+        '
+        'lblToughnessA
+        '
+        Me.lblToughnessA.AutoSize = True
+        Me.lblToughnessA.Location = New System.Drawing.Point(11, 23)
+        Me.lblToughnessA.Name = "lblToughnessA"
+        Me.lblToughnessA.Size = New System.Drawing.Size(104, 13)
+        Me.lblToughnessA.TabIndex = 22
+        Me.lblToughnessA.Text = "Toughness Points: 0"
+        '
+        'lblDefPointsA
+        '
+        Me.lblDefPointsA.AutoSize = True
+        Me.lblDefPointsA.Location = New System.Drawing.Point(11, 10)
+        Me.lblDefPointsA.Name = "lblDefPointsA"
+        Me.lblDefPointsA.Size = New System.Drawing.Size(91, 13)
+        Me.lblDefPointsA.TabIndex = 21
+        Me.lblDefPointsA.Text = "Defense Points: 0"
+        '
+        'pnlBowA
+        '
+        Me.pnlBowA.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.pnlBowA.BackColor = System.Drawing.SystemColors.AppWorkspace
+        Me.pnlBowA.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.pnlBowA.Controls.Add(Me.lblPowerA)
+        Me.pnlBowA.Controls.Add(Me.lbPower)
+        Me.pnlBowA.Controls.Add(Me.lblBowDmgA)
+        Me.pnlBowA.Controls.Add(Me.cbBowA)
+        Me.pnlBowA.Controls.Add(Me.lblBowA)
+        Me.pnlBowA.Location = New System.Drawing.Point(390, 12)
+        Me.pnlBowA.Name = "pnlBowA"
+        Me.pnlBowA.Size = New System.Drawing.Size(183, 153)
+        Me.pnlBowA.TabIndex = 19
+        '
+        'lblPowerA
+        '
+        Me.lblPowerA.AutoSize = True
+        Me.lblPowerA.Location = New System.Drawing.Point(11, 76)
+        Me.lblPowerA.Name = "lblPowerA"
+        Me.lblPowerA.Size = New System.Drawing.Size(40, 13)
+        Me.lblPowerA.TabIndex = 19
+        Me.lblPowerA.Text = "Power:"
+        '
+        'lbPower
+        '
+        Me.lbPower.FormattingEnabled = True
+        Me.lbPower.Items.AddRange(New Object() {"(None)", "Power I", "Power II", "Power III", "Power IV", "Power V"})
+        Me.lbPower.Location = New System.Drawing.Point(14, 92)
+        Me.lbPower.Name = "lbPower"
+        Me.lbPower.Size = New System.Drawing.Size(163, 43)
+        Me.lbPower.TabIndex = 20
+        '
+        'lblBowDmgA
+        '
+        Me.lblBowDmgA.AutoSize = True
+        Me.lblBowDmgA.Location = New System.Drawing.Point(56, 12)
+        Me.lblBowDmgA.Name = "lblBowDmgA"
+        Me.lblBowDmgA.Size = New System.Drawing.Size(28, 13)
+        Me.lblBowDmgA.TabIndex = 17
+        Me.lblBowDmgA.Text = "0 (0)"
+        '
+        'lblCombatRating
+        '
+        Me.lblCombatRating.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.lblCombatRating.Font = New System.Drawing.Font("Microsoft Sans Serif", 40.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblCombatRating.Location = New System.Drawing.Point(579, 12)
+        Me.lblCombatRating.Name = "lblCombatRating"
+        Me.lblCombatRating.Size = New System.Drawing.Size(183, 153)
+        Me.lblCombatRating.TabIndex = 21
+        Me.lblCombatRating.Text = "0"
+        Me.lblCombatRating.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'lblArmorRating
+        '
+        Me.lblArmorRating.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.lblArmorRating.Font = New System.Drawing.Font("Microsoft Sans Serif", 40.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblArmorRating.Location = New System.Drawing.Point(579, 171)
+        Me.lblArmorRating.Name = "lblArmorRating"
+        Me.lblArmorRating.Size = New System.Drawing.Size(183, 153)
+        Me.lblArmorRating.TabIndex = 22
+        Me.lblArmorRating.Text = "0"
+        Me.lblArmorRating.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'lblOverallRating
+        '
+        Me.lblOverallRating.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.lblOverallRating.Font = New System.Drawing.Font("Microsoft Sans Serif", 40.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblOverallRating.Location = New System.Drawing.Point(579, 330)
+        Me.lblOverallRating.Name = "lblOverallRating"
+        Me.lblOverallRating.Size = New System.Drawing.Size(183, 153)
+        Me.lblOverallRating.TabIndex = 23
+        Me.lblOverallRating.Text = "0"
+        Me.lblOverallRating.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
         'HomePage
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1065, 756)
+        Me.AutoSize = True
+        Me.ClientSize = New System.Drawing.Size(768, 485)
+        Me.Controls.Add(Me.lblOverallRating)
+        Me.Controls.Add(Me.lblArmorRating)
+        Me.Controls.Add(Me.lblCombatRating)
+        Me.Controls.Add(Me.pnlBowA)
+        Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.pnlBootsA)
         Me.Controls.Add(Me.pnlLeggingsA)
         Me.Controls.Add(Me.pnlChestA)
@@ -430,8 +692,6 @@ Partial Class HomePage
         Me.Controls.Add(Me.pnlExtrasA)
         Me.Controls.Add(Me.pnlAxeA)
         Me.Controls.Add(Me.pnlSwordA)
-        Me.Controls.Add(Me.cbBowA)
-        Me.Controls.Add(Me.lblBowA)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "HomePage"
         Me.Text = "Minecraft Damage Calculator (1.16.*)"
@@ -449,8 +709,11 @@ Partial Class HomePage
         Me.pnlLeggingsA.PerformLayout()
         Me.pnlBootsA.ResumeLayout(False)
         Me.pnlBootsA.PerformLayout()
+        Me.Panel1.ResumeLayout(False)
+        Me.Panel1.PerformLayout()
+        Me.pnlBowA.ResumeLayout(False)
+        Me.pnlBowA.PerformLayout()
         Me.ResumeLayout(False)
-        Me.PerformLayout()
 
     End Sub
 
@@ -478,8 +741,6 @@ Partial Class HomePage
     Friend WithEvents lblSharpAAxe As Label
     Friend WithEvents lbSharpAAxe As ListBox
     Friend WithEvents pnlExtrasA As Panel
-    Friend WithEvents cbStrengthIA As CheckBox
-    Friend WithEvents cbStrengthIIA As CheckBox
     Friend WithEvents pnlHelmA As Panel
     Friend WithEvents pnlChestA As Panel
     Friend WithEvents lblProtAHelm As Label
@@ -490,4 +751,28 @@ Partial Class HomePage
     Friend WithEvents lblLeggingsDefA As Label
     Friend WithEvents pnlBootsA As Panel
     Friend WithEvents lblBootsDefA As Label
+    Friend WithEvents lblHelmEPFA As Label
+    Friend WithEvents lblChestEPFA As Label
+    Friend WithEvents lblProtAChest As Label
+    Friend WithEvents lbProtAChest As ListBox
+    Friend WithEvents lblLeggingsEPFA As Label
+    Friend WithEvents lblProtALeggings As Label
+    Friend WithEvents lbProtALeggings As ListBox
+    Friend WithEvents lblBootsEPFA As Label
+    Friend WithEvents lblProtABoots As Label
+    Friend WithEvents lbProtABoots As ListBox
+    Friend WithEvents Panel1 As Panel
+    Friend WithEvents lblEPFA As Label
+    Friend WithEvents lblToughnessA As Label
+    Friend WithEvents lblDefPointsA As Label
+    Friend WithEvents lblArmorDRA As Label
+    Friend WithEvents cbStrengthIIA As CheckBox
+    Friend WithEvents cbStrengthIA As CheckBox
+    Friend WithEvents pnlBowA As Panel
+    Friend WithEvents lblBowDmgA As Label
+    Friend WithEvents lblPowerA As Label
+    Friend WithEvents lbPower As ListBox
+    Friend WithEvents lblCombatRating As Label
+    Friend WithEvents lblArmorRating As Label
+    Friend WithEvents lblOverallRating As Label
 End Class
